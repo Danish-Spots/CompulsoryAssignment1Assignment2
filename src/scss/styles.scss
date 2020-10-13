@@ -13,3 +13,19 @@ h2
 h1{
     @extend h2;
 }
+
+table{
+    padding: 15px;
+    width: 400px;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid darkgray;
+    text-align: left;
+    padding-left: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }

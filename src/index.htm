@@ -7,10 +7,24 @@
 </head>
 
 <body>
-  <h1>Webpack - TypeScript - Scss</h1>
-  <h2>TypeScript Hello World</h2>  
+  <h1>String Manipulations</h1>
+  <h2>Enter text to manipulate</h2> 
+  <input type="text" id="stringInput">
+  <select id="stringManipulation">
+    <option id="toUpperCase">Upper Case</option>
+    <option id="toLowerCase">Lower Case</option>
+    <option id="toPigLatin">Pig Latin</option>
+  </select>
+  <button id="newStringBtn">Manipulate!</button>
+  <h2>Results</h2>
   <div id="content"></div>
-    
+    <table id="resultTable" class="rT">
+      <tr>
+        <th>ID</th>
+        <th>Original String</th>
+        <th>New String</th>
+      </tr>
+    </table>
   <script src="bundle.js"></script>
 </body>
 </html>
