@@ -45,14 +45,13 @@ function ConvertToLower(stringToConvert: string): string{
 }
 
 function ConvertToPigLatin(s: string): string{
-    s = s.toLowerCase();
     let resultString: string = "";
     let temp: string = "";
-    let vowel = ['a', 'e', 'i', 'o', 'u'] 
+    let vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'] 
     let consonantStart: boolean  = false;;
 
     for (let index = 0; index < s.length; index++) {
-        let findChar = vowel.some(c => c.toLowerCase() == s[index]);
+        let findChar = vowel.some(c => c == s[index]);
         if (findChar){
             break;
         }
